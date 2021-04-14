@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: IBM Plex Sans;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #14161f;
+}
+
+
+
+.first__accordion {
+    background-color: #14161f;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    user-select: none;
+}
+
+.accordion__item {
+    width: 100%;
+    position: relative;
+    /* border-top: 1px solid #373a49; */
+    border-bottom: 1px solid #373a49;
+}
+
+.accordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__title__text span{
+    font-weight: bold;
+}
+
+.accordion__title {
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion__title__text {
+    font-size: 20px;
+    
+}
+
+.accordion__content {
+    position: relative;
+    color: #c7c8d4;
+    height: 0px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordion__item.active .accordion__content{
+    height: 50px;
+    padding: 10px;
+}
+
+.accordion__title__img img{
+    width: 10px;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    transition: .4s;
+}
+
+
+.accordion__item.active .accordion__title__img img{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+.second__accordion {
+    background-color: #2d2d2d;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.accordion__item_2 {
+    width: 100%;
+    position: relative;
+}
+
+.accordion__title_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion__title_2 {
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion__title__text_2 {
+    font-size: 24px;
+}
+
+.accordion__content_2 {
+    position: relative;
+    color: #b7b9c8;
+    height: 0px;  
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordion__item_2.active_2 .accordion__content_2{
+    height: 50px;
+    padding: 10px;
+}
+
+.accordion__title__img_2 img{
+    width: 20px;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    transition: .4s;
+}
+
+.accordion__item_2.active_2 .accordion__title__img_2 img{
+    transform: rotate(90deg);
+}
